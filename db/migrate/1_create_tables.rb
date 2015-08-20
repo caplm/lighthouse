@@ -19,6 +19,7 @@ class CreateTables < ActiveRecord::Migration
     create_table :reviews do |t|
       t.string :comment
       t.timestamps
+
     end
 
   end

@@ -1,0 +1,31 @@
+body {
+
+  font-family: 'Karla', sans-serif;
+  
+}
+
+label {
+
+  color: #ce3a2c;
+}
+
+input {
+
+  font-family: 'Karla', sans-serif;
+} 
+
+input[type="submit"] {
+  
+  border: 1px dashed #778d7e;
+  background-color: #FFFFFF;
+  
+}
+
+.row {
+  margin: 1% 0;
+  overflow: auto;   /* required - without this, the page layout is screwed up */
+
+.container {
+
+  
+}
