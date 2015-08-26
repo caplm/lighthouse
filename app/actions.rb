@@ -15,13 +15,35 @@ get '/login' do
   erb :login
 end
 
+get '/profile' do
+  erb :profile 
+end
+
+get '/movies/new' do
+  erb :new_movie
+end
+
+post '/movies/new' do
+  redirect '/movies/create'
+end
+
+get '/movies/new' do
+end
+
+post '/movies/create' do
+  movie-title = params[:movie-title]
+  year-released = params[:year-released]
+  movie-director = params[:movie-director]
+  movierating = params[:movierating]
+
+  new_movie = current_user.movies.create movie-title: movie-title, year-released: year-released, movie-director: movie-director, movierating: movierating
+  redirect "/movies/#{new_movie.id}"
+end
+
 get '/signup' do
   erb :signup
 end
 
-get '/profile' do
-  erb :profile 
-end
 
 post '/login' do
   username = params[:username]

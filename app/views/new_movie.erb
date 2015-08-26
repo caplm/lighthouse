@@ -1,0 +1,32 @@
+<div class="container">
+  <form method="POST" action="/movies/create" class="form-horizontal" id="movieform">
+    <div class="form-group">
+      <label for="movie-title">Movie Title</label>
+      <input type="text" class="form-control" id="movie-title" placeholder="i.e. Space Jam">
+    </div>
+    <div class="form-group">
+      <label for="year-released">Year Released</label>
+      <input type="number" class="form-control" id="year-released" placeholder="1989">
+    </div>
+    <div class="form-group">
+      <label for="movie-director">Director</label>
+      <input type="text" class="form-control" id="movie-director" placeholder="i.e. Cameron Crowe">
+    </div>
+    <div class="form-group">
+      <label for="movierating">Movie Rating /10</label>
+      <select name="movierating" id="movierating" class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+    </div>
+  <input type="submit" value="Post Movie">
+  </form>
+</div>
